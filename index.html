@@ -11,14 +11,14 @@
   <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
   
 <head>
-<title>Phương Anh</title>
+<title>Trần Minh Anh</title>
 <link rel="icon" type="image/x-icon" href="https://www.palingit.com/favicon.ico">
 <meta name="description" content="HTML Replit Coding">
 </head>
 <body style="background-color: rgb(238, 200, 219);">
 	
   
-   <audio src="./y2mate (mp3cut.net).mp3" id="linkmp3" class="sembunyi"></audio>
+   <audio src="./nhacnen.mp3" id="linkmp3" class="sembunyi"></audio>
    
    <div id="bodyblur">
      <!-- Wallpaper --><img src="./4a0a9d924fd271737c0813852160ae89.jpg" id="wallpaper"/><div id="beneranblur"></div>
@@ -29,7 +29,7 @@
      <div id="kadoIn">
        <!-- Tombol Surat --><img src="./helo.png"/>
      </div>
-     <p id="ket"> <span style="font-style: italic; color: rgb(162, 212, 208);">Mở quà đii béee:3</span></p>
+     <p id="ket"> <span style="font-style: italic; color: rgb(162, 212, 208);">Mở quà đii béee :3</span></p>
 
      <div class="kumpulanstiker">
          <!-- Stiker untuk Konten -->
@@ -45,10 +45,10 @@
      <p id="halo" class="halo"></p>
      
      <div><blockquote id='bq' data-text='💞'>
-       <p id="kalimat">Chuyện cũng hong có gì chỉ là hôm nay anh cảm thấy nhớ bé thoiii👉👈</p>
+       <p id="kalimat">Hôm nay anh ở đây muốn nói với em một điều nhỏ nhoyy hoyy 👉👈</p>
 
        <!-- Pesan -->
-       <p id="pesan1">click it! ❤️</p>
+       <p id="pesan1">ấn mấy cái trái tim iii!❤️</p>
        <div id="kolombaru">
          <li id="lv1"> ❤️</li>
          <li id="lv2"> ❤️</li>
@@ -56,68 +56,96 @@
          <li id="lv4"> ❤️</li>
        </div>
 
-       <p id="pesan2">nhỏ này giỏi, chục đỉm nha 💘</p>
-       <p id="pesan3">Em biết hôm nay là ngày gì hongg</p>
-       <p id="pesan4" class="sty2">Nay là ngày 8-3 đó nhỏ này</p>
-       <p id="pesan5" class="sty2">Nhân dịp này anh chúc bé ngày càng xjnh đẹp, dễ thương, học giỏi ngoan ngoãn, ăn mau chóng lớn và chúc em nhìu nhìu niềm vuii có tất cả trừ vất vả nghe tưaaa </p>
-       <p id="pesan6" class="sty2">Nhưng mà nhớ phải nghe lời anh hơn chứ nhỏ cứng đầu hơn cục đá nữa đóoo <br>đặc biệt phải iuu anh nhìu hơn bic chưa</p>
+       <p id="pesan2">bé nhà anh giỏi quáaa, chục đỉm nha 💘</p>
+       <p id="pesan3">Anh muốn nóiii với em là là là.....</p>
+       <p id="pesan4" class="sty2">Anh iuu emmm nhìu lắmmm lắm nhunnn</p>
+       <p id="pesan5" class="sty2">hong biết aiii đó có nhớ anhhh khonnggg hàaaaa</p>
+       <p id="pesan6" class="sty2">Còn anhh trong đầuuu bây giờ chỉ có hình póngg dáng em thoaii🤧<br></p>
 
        <!-- Tombol Lanjut -->
-       <p id="opsL">next để đi tiếp :3</p>
+       <p id="opsL">ấn tiếp tục để tiếp tục :333</p>
      </blockquote></div>
 
      <!-- Tombol Kirim Pesan -->
-     <div id="Tombol"><a id="By">&#128140; Next</a></div>
+     <div id="Tombol"><a id="By">&#128140; tiếp tụcc</a></div>
      
      <!-- Pesan Ditolak -->
      <div id="pesanditolak">
        <img id="stikerditolak" src="https://feeldreams.github.io/weee.gif"/>
-       <p id="kataditolak">Rất tiếc cho nhỏ là hông thoát khỏi tay anh đâu mơ đi cưng😏</p>
+       <p id="kataditolak">Bộ em thích từ chối lắm hả ? Nhưng mà em bị lừa rồiii cục cưng 😆</p>
      </div>
 
    </div>
 
 <script>
-  const body = document.querySelector("body");const swalst = Swal.mixin({timer: 2300, allowOutsideClick: false, showConfirmButton: false, timerProgressBar: true, imageHeight: 90,}); audio = new Audio('' + linkmp3.src); ftganti=0;fungsi=0;fungsiAwal=0;deffotostiker=fotostiker.src;Content.style = "opacity:1;margin-top:16vh"; const swals = Swal.mixin({allowOutsideClick: false, cancelButtonColor: '#FF0040', imageHeight: 80,}); 
+  const body = document.querySelector("body");
+  const swalst = Swal.mixin({
+    timer: 2300,
+    allowOutsideClick: false,
+    showConfirmButton: false,
+    timerProgressBar: true,
+    imageHeight: 90,
+  });
 
-  document.getElementById("kadoIn").onclick = function() {if(fungsiAwal==0){audio.play();fungsiAwal=1;kadoIn.style="transition:all .8s ease;transform:scale(10);opacity:0";wallpaper.style="transform: scale(1.5);";ket.style="display:none";setTimeout(initengahan,300);setTimeout(inipesan,500)}}
-  
-  async function inipesan(){
-    var { value: nama } = await swals.fire({
-           title: 'Tên của người đẹp là gì vậy?', input: 'text',
-       });
-       if(nama && nama.length < 11){
-         window.nama = nama;
-         vketikhalo="Hai," + nama +"";
-         mulainama();
-         } else {
-          await Swal.fire({
-    title: "Bộ nhỏ này đẹp gái mà hỏng có tên hay saoo!",
-    text: "Nhập tên ngắn hơn đi nhỏ này nhập gì dàiii quá",
-    icon: "warning"
-});
-inipesan();
+  const audio = new Audio(linkmp3.src); // use 'const' for clarity
+  let ftganti = 0, fungsi = 0, fungsiAwal = 0;
+  const deffotostiker = fotostiker.src;
+  Content.style = "opacity:1;margin-top:16vh";
 
+  const swals = Swal.mixin({
+    allowOutsideClick: false,
+    cancelButtonColor: '#FF0040',
+    imageHeight: 80,
+  });
+
+  document.getElementById("kadoIn").onclick = function() {
+    if (fungsiAwal === 0) {
+      audio.play();
+      fungsiAwal = 1;
+      kadoIn.style = "transition:all .8s ease;transform:scale(10);opacity:0";
+      wallpaper.style = "transform: scale(1.5);";
+      ket.style = "display:none";
+      setTimeout(initengahan, 300);
+      setTimeout(inipesan, 500);
     }
   }
 
-  
-  var tanya = 'Ngày maii đii lượn lờ thành phố cùng anh nhéee 😳';
-  var opstanya = 'Lựa chọn của nhỏ là.......';
-  var tompositif = 'Em đồng ý <3';
-  var tomnegatif = 'Em không đồng ý đâu';
-  
-  async function pertanyaan(){var { isConfirmed: prtanya } = await swals.fire({title: nama + ' ' + tanya, text: '' + opstanya, imageUrl: '' + fotostiker5.src, showCancelButton: true, confirmButtonText: '' + tompositif, cancelButtonText: '' + tomnegatif,});
-    if(prtanya){
-	pesanwhatsapp = "Iyaa " + nama + " kangen kamu juga kok! ><";
-	menuju();
+  function inipesan() {
+    window.nama = "Trần Minh Anh đáng iuuu";
+    vketikhalo = "Heluuu, " + window.nama;
+    mulainama();
+  }
+
+  const tanya = 'Nói chiện với anh nhiều hơn nheeee 😳';
+  const opstanya = 'Lựa chọn của em là.......';
+  const tompositif = 'Em đồng ý 😍';
+  const tomnegatif = 'Em hoggg đồng ý đâu! 😠';
+
+  async function pertanyaan() {
+    const { isConfirmed: prtanya } = await swals.fire({
+      title: nama + ' ' + tanya,
+      text: opstanya,
+      imageUrl: fotostiker5.src,
+      showCancelButton: true,
+      confirmButtonText: tompositif,
+      cancelButtonText: tomnegatif,
+    });
+
+    if (prtanya) {
+      pesanwhatsapp = "Iyaa " + nama + " kangen kamu cũng quá chò 😍!";
+      menuju();
     } else {
-	pesanwhatsapp = nama + " engga kangen kamu wleee! :p";
-	await swalst.fire({title: '' + kataditolak.innerHTML, timer: 2000, imageUrl: '' + stikerditolak.src,});
-	menuju();
+      pesanwhatsapp = nama + " không thèm nói chuyện luôn đó 😢";
+      await swalst.fire({
+        title: kataditolak.innerHTML,
+        timer: 2000,
+        imageUrl: stikerditolak.src,
+      });
+      menuju();
     }
-    }
+  }
 </script>
+
 <script src="a.js"></script>
 
 </body>
