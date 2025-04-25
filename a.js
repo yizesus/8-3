@@ -22,7 +22,7 @@ function initengahan(){
 
   function tombol(){wallpaper.style="transform: scale(1);";Tombol.style="opacity:1;transform: scale(1);";fungsi=1}
   document.getElementById("By").onclick = function() {if(fungsi==1){pertanyaan();} if(fungsi==2){menuju();}}
-  async function menuju(){await swals.fire('Ukiiii ', 'Và cuối cùng anh xin tặng bé mụt món quà nho nhỏ nèeee', 'success');window.location = "https://yizesus.github.io/tranminhanh/";}
+  async function menuju(){await swals.fire('Ukiiii ', 'Và cuối cùng anh xin tặng bé mụt món quà nho nhỏ nèeee', 'success');window.location = "https://yizesus.github.io/mia/";}
   
   vketik1=kalimat.innerHTML;kalimat.innerHTML = "";
   function mulaiketik1(){
